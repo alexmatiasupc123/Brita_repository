@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UpdatePanelHistory", "..\..\WebSites\UpdatePanelHistory\", "{D30BA9A1-7DD6-43A2-BC6B-5A0BB9FC1D72}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/UpdatePanelHistory"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\UpdatePanelHistory\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\UpdatePanelHistory\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/UpdatePanelHistory"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\UpdatePanelHistory\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\UpdatePanelHistory\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64010"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D30BA9A1-7DD6-43A2-BC6B-5A0BB9FC1D72}.Debug|.NET.ActiveCfg = Debug|.NET
+		{D30BA9A1-7DD6-43A2-BC6B-5A0BB9FC1D72}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

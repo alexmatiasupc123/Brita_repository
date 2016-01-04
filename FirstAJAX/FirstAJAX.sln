@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FirstAJAX", "..\..\WebSites\FirstAJAX\", "{1A93B069-DA1B-4B45-9B46-8D1A67B7C44B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/FirstAJAX"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\FirstAJAX\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\FirstAJAX\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/FirstAJAX"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\FirstAJAX\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\FirstAJAX\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63187"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A93B069-DA1B-4B45-9B46-8D1A67B7C44B}.Debug|.NET.ActiveCfg = Debug|.NET
+		{1A93B069-DA1B-4B45-9B46-8D1A67B7C44B}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

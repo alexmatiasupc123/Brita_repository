@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UpdateProgressControl", "..\..\WebSites\UpdateProgressControl\", "{D6C5B2DD-D741-4F80-99C7-565DEB7107E8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/UpdateProgressControl"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\UpdateProgressControl\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\UpdateProgressControl\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/UpdateProgressControl"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\UpdateProgressControl\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\UpdateProgressControl\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64336"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6C5B2DD-D741-4F80-99C7-565DEB7107E8}.Debug|.NET.ActiveCfg = Debug|.NET
+		{D6C5B2DD-D741-4F80-99C7-565DEB7107E8}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
