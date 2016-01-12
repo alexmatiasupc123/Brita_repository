@@ -1,0 +1,90 @@
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe.config
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.pdb
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\ResolveAssemblyReference.cache
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.Properties.Resources.resources
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.MainForm.resources
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.ResultsGrid.resources
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.csproj.GenerateResource.Cache
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.exe
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.pdb
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.exe.config
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.exe
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.pdb
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\ResolveAssemblyReference.cache
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.Properties.Resources.resources
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.MainForm.resources
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.ResultsGrid.resources
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.csproj.GenerateResource.Cache
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.exe
+G:\britanico\solucion\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.pdb
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe.config
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.pdb
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.Properties.Resources.resources
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.MainForm.resources
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.ResultsGrid.resources
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.csproj.GenerateResource.Cache
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.exe
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.pdb
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.exe.config
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.exe
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.pdb
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\ResolveAssemblyReference.cache
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.Properties.Resources.resources
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.MainForm.resources
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.ResultsGrid.resources
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.csproj.GenerateResource.Cache
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.exe
+C:\PROYECTOS.NET\Britanico.Web\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.pdb
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.exe.config
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.exe
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.pdb
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\ResolveAssemblyReference.cache
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.Properties.Resources.resources
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.MainForm.resources
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.ResultsGrid.resources
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.csproj.GenerateResource.Cache
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.exe
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.pdb
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.exe.config
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.exe
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Release\Britanico.Web.Client.pdb
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\ResolveAssemblyReference.cache
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.Properties.Resources.resources
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.MainForm.resources
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.ResultsGrid.resources
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.csproj.GenerateResource.Cache
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.exe
+F:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Release\Britanico.Web.Client.pdb
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe.config
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.pdb
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Debug\ResolveAssemblyReference.cache
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.Properties.Resources.resources
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.MainForm.resources
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.ResultsGrid.resources
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.csproj.GenerateResource.Cache
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.exe
+E:\Sistemas\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.pdb
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe.config
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.pdb
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\ResolveAssemblyReference.cache
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.Properties.Resources.resources
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.MainForm.resources
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.ResultsGrid.resources
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.csproj.GenerateResource.Cache
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.exe
+D:\Centro Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.pdb
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe.config
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.exe
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\bin\Debug\Britanico.Web.Client.pdb
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\ResolveAssemblyReference.cache
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.Properties.Resources.resources
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.MainForm.resources
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.ResultsGrid.resources
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.csproj.GenerateResource.Cache
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.exe
+D:\Cultural\Britanico\Tests\Britanico.Web.Client\obj\Debug\Britanico.Web.Client.pdb

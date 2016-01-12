@@ -1,0 +1,45 @@
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\obj\Debug\ResolveAssemblyReference.cache
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\bin\Release\BBVA.Interfaces.dll
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\bin\Release\BBVA.Interfaces.pdb
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\obj\Release\ResolveAssemblyReference.cache
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\obj\Release\BBVA.Interfaces.dll
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\obj\Release\BBVA.Interfaces.pdb
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.dll
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.pdb
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.dll
+G:\britanico\solucion\Britanico.Web\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.pdb
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.dll
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.pdb
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\obj\Debug\ResolveAssemblyReference.cache
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.dll
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.pdb
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\bin\Release\Britanico.Interfaces.dll
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\bin\Release\Britanico.Interfaces.pdb
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\obj\Release\ResolveAssemblyReference.cache
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\obj\Release\Britanico.Interfaces.dll
+C:\PROYECTOS.NET\Britanico.Web\Britanico.Interfaces\obj\Release\Britanico.Interfaces.pdb
+E:\Sistemas\Britanico\Britanico.Interfaces\bin\Release\Britanico.Interfaces.dll
+E:\Sistemas\Britanico\Britanico.Interfaces\bin\Release\Britanico.Interfaces.pdb
+E:\Sistemas\Britanico\Britanico.Interfaces\obj\Release\ResolveAssemblyReference.cache
+E:\Sistemas\Britanico\Britanico.Interfaces\obj\Release\Britanico.Interfaces.dll
+E:\Sistemas\Britanico\Britanico.Interfaces\obj\Release\Britanico.Interfaces.pdb
+F:\Sistemas\Britanico\Britanico.Interfaces\bin\Release\Britanico.Interfaces.dll
+F:\Sistemas\Britanico\Britanico.Interfaces\bin\Release\Britanico.Interfaces.pdb
+F:\Sistemas\Britanico\Britanico.Interfaces\obj\Release\ResolveAssemblyReference.cache
+F:\Sistemas\Britanico\Britanico.Interfaces\obj\Release\Britanico.Interfaces.dll
+F:\Sistemas\Britanico\Britanico.Interfaces\obj\Release\Britanico.Interfaces.pdb
+E:\Sistemas\Britanico\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.dll
+E:\Sistemas\Britanico\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.pdb
+E:\Sistemas\Britanico\Britanico.Interfaces\obj\Debug\ResolveAssemblyReference.cache
+E:\Sistemas\Britanico\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.dll
+E:\Sistemas\Britanico\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.pdb
+D:\Centro Cultural\Britanico\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.dll
+D:\Centro Cultural\Britanico\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.pdb
+D:\Centro Cultural\Britanico\Britanico.Interfaces\obj\Debug\ResolveAssemblyReference.cache
+D:\Centro Cultural\Britanico\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.dll
+D:\Centro Cultural\Britanico\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.pdb
+D:\Cultural\Britanico\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.dll
+D:\Cultural\Britanico\Britanico.Interfaces\bin\Debug\Britanico.Interfaces.pdb
+D:\Cultural\Britanico\Britanico.Interfaces\obj\Debug\ResolveAssemblyReference.cache
+D:\Cultural\Britanico\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.dll
+D:\Cultural\Britanico\Britanico.Interfaces\obj\Debug\Britanico.Interfaces.pdb

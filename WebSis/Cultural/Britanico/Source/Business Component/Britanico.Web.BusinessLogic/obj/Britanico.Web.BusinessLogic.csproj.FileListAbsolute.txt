@@ -1,0 +1,142 @@
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\ResolveAssemblyReference.cache
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessLogic.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessLogic.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\BBVA.Interfaces.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\BBVA.Utilitarios.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessEntities.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.DataAccess.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\BBVA.Utilitarios.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\BBVA.Interfaces.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessEntities.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.DataAccess.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\Britanico.Web.BusinessLogic.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\Britanico.Web.BusinessLogic.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.dll
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.pdb
+G:\britanico\solucion\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\ResolveAssemblyReference.cache
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessLogic.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessLogic.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Interfaces.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Utilitarios.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessEntities.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.DataAccess.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Utilitarios.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessEntities.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Interfaces.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.DataAccess.pdb
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\Britanico.Web.BusinessLogic.dll
+C:\PROYECTOS.NET\Britanico.Web\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\Britanico.Web.BusinessLogic.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\ResolveAssemblyReference.cache
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\Britanico.Web.BusinessLogic.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\Britanico.Web.BusinessLogic.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessLogic.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessLogic.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Interfaces.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Utilitarios.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessEntities.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.DataAccess.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Utilitarios.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessEntities.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Interfaces.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.DataAccess.pdb
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessLogic.dll
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessLogic.pdb
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Interfaces.dll
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Utilitarios.dll
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessEntities.dll
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.DataAccess.dll
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Utilitarios.pdb
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.BusinessEntities.pdb
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Interfaces.pdb
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Release\Britanico.Web.DataAccess.pdb
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\ResolveAssemblyReference.cache
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\Britanico.Web.BusinessLogic.dll
+F:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Release\Britanico.Web.BusinessLogic.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.pdb
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.dll
+E:\Sistemas\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.pdb
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.pdb
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.pdb
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.pdb
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.pdb
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.pdb
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.dll
+D:\Centro Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.pdb
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessLogic.pdb
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Utilitarios.pdb
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.BusinessEntities.pdb
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Interfaces.pdb
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\bin\Debug\Britanico.Web.DataAccess.pdb
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.dll
+D:\Cultural\Britanico\Source\Business Component\Britanico.Web.BusinessLogic\obj\Debug\Britanico.Web.BusinessLogic.pdb

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Spring" Class="_SEGURIDADDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ATENEA;Initial Catalog=Spring;Persist Security Info=True;User ID=tscreen" SettingsObjectName="Britanico.SacNet.DataAccess.Properties.Settings" SettingsPropertyName="SpringConnectionString1" Provider="System.Data.SqlClient" />
+  <Function Name="Ssi.pa_pro_ListarMenuPorRolUsuario" Method="pa_pro_ListarMenuPorRolUsuario">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="VarChar(4)" />
+    <ElementType Name="pa_pro_ListarMenuPorRolUsuarioResult">
+      <Column Name="CodigoOpcion" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="CodigoPadre" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Enlace" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FlagMenu" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_pro_DetectarLoginPassword" Method="pa_pro_DetectarLoginPassword">
+    <Parameter Name="p_CodUsuario" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_Contraseña" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="pa_pro_DetectarLoginPasswordResult">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_RegistrarUsuariosRoles" Method="pa_mnt_RegistrarUsuariosRoles">
+    <Parameter Name="p_CodigoUsuario" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Parameter Name="p_Estado" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_SegUsuarioRegistro" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_ListarUsuariosRoles" Method="pa_mnt_ListarUsuariosRoles">
+    <Parameter Name="p_CodigoUsuario" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="pa_mnt_ListarUsuariosRolesResult">
+      <Column Name="CodigoUsuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoUsuarioNombre" Type="System.String" DbType="VarChar(82)" CanBeNull="true" />
+      <Column Name="CodigoRol" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoRolNombre" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioModifica" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_ListarUsuarios" Method="pa_mnt_ListarUsuarios">
+    <Parameter Name="p_NombresUsuario" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_ApellidosUsuario" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_LoginUsuario" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="pa_mnt_ListarUsuariosResult">
+      <Column Name="LoginUsuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordUsuario" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidosUsuario" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="NombresUsuario" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CodPersona" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EstadoUsuario" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_EliminarUsuariosRoles" Method="pa_mnt_EliminarUsuariosRoles">
+    <Parameter Name="p_CodigoUsuario" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_EliminarRolesOpciones" Method="pa_mnt_EliminarRolesOpciones">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_EliminarRoles" Method="pa_mnt_EliminarRoles">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_EliminarOpciones" Method="pa_mnt_EliminarOpciones">
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_BuscarUsuariosRoles" Method="pa_mnt_BuscarUsuariosRoles">
+    <Parameter Name="p_CodigoUsuario" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <ElementType Name="pa_mnt_BuscarUsuariosRolesResult">
+      <Column Name="CodigoUsuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoRol" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioModifica" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_BuscarRolesOpciones" Method="pa_mnt_BuscarRolesOpciones">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" />
+    <ElementType Name="pa_mnt_BuscarRolesOpcionesResult">
+      <Column Name="CodigoRol" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoOpcion" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Ver" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Eliminar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Editar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Nuevo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SegFechaModifica" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioModifica" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_BuscarOpciones" Method="pa_mnt_BuscarOpciones">
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" />
+    <ElementType Name="pa_mnt_BuscarOpcionesResult">
+      <Column Name="CodigoOpcion" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoPadre" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Enlace" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FlagMenu" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioModifica" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_ActualizarUsuariosRoles" Method="pa_mnt_ActualizarUsuariosRoles">
+    <Parameter Name="p_CodigoUsuario" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Parameter Name="p_Estado" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_SegUsuarioModifica" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_ActualizarRolesOpciones" Method="pa_mnt_ActualizarRolesOpciones">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" />
+    <Parameter Name="p_Flag_Ver" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_Flag_Eliminar" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_Flag_Editar" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_Flag_Nuevo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_SegUsuarioModifica" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_ActualizarRoles" Method="pa_mnt_ActualizarRoles">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Parameter Name="p_NombreRol" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="p_DescripcionRol" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_Estado" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="p_SegUsuarioModifica" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_RegistrarRolesOpciones" Method="pa_mnt_RegistrarRolesOpciones">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" />
+    <Parameter Name="p_Flag_Ver" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_Flag_Eliminar" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_Flag_Editar" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_Flag_Nuevo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="p_SegUsuarioRegistro" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_pro_ListarRolOpcion" Method="pa_pro_ListarRolOpcion">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="VarChar(4)" />
+    <ElementType Name="pa_pro_ListarRolOpcionResult">
+      <Column Name="CodigoRol" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoOpcion" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="Enlace" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoPadre" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="FlagMenu" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Flag_Ver" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Eliminar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Editar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Nuevo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_ListarRolesOpciones" Method="pa_mnt_ListarRolesOpciones">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" />
+    <ElementType Name="pa_mnt_ListarRolesOpcionesResult">
+      <Column Name="CodigoRol" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoRolNombre" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CodigoOpcion" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoOpcionNombre" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CodigoPadre" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="FlagMenu" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Flag_Ver" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Eliminar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Editar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Flag_Nuevo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SegFechaModifica" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioModifica" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_RegistrarRoles" Method="pa_mnt_RegistrarRoles">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" Direction="InOut" />
+    <Parameter Name="p_NombreRol" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="p_DescripcionRol" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_Estado" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="p_SegUsuarioRegistro" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Maestras.pa_mnt_ActualizarConfig" Method="pa_mnt_ActualizarConfig">
+    <Parameter Name="p_CodConfig" Type="System.String" DbType="Char(6)" />
+    <Parameter Name="p_CodArgu" Type="System.String" DbType="VarChar(17)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Maestras.pa_mnt_BuscarConfig" Method="pa_mnt_BuscarConfig">
+    <Parameter Name="p_CodConfig" Type="System.String" DbType="Char(6)" />
+    <ElementType Name="pa_mnt_BuscarConfigResult">
+      <Column Name="CodConfig" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="CodTabla" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="CodArgu" Type="System.String" DbType="VarChar(17)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Maestras.pa_mnt_ListarConfig" Method="pa_mnt_ListarConfig">
+    <Parameter Name="p_CodSistema" Type="System.String" DbType="Char(4)" />
+    <ElementType Name="pa_mnt_ListarConfigResult">
+      <Column Name="CodConfig" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="CodTabla" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="CodArgu" Type="System.String" DbType="VarChar(17)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_BuscarUsuarios" Method="pa_mnt_BuscarUsuarios">
+    <Parameter Name="p_LoginUsuario" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="pa_mnt_BuscarUsuariosResult">
+      <Column Name="LoginUsuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordUsuario" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidosUsuario" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="NombresUsuario" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CodPersona" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TipoUsuario" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_ActualizarOpciones" Method="pa_mnt_ActualizarOpciones">
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" />
+    <Parameter Name="p_CodigoPadre" Type="System.String" DbType="Char(4)" />
+    <Parameter Name="p_Nombre" Type="System.String" DbType="VarChar(35)" />
+    <Parameter Name="p_Descripcion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_Enlace" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_FlagMenu" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="p_Estado" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="p_SegUsuarioModifica" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_RegistrarOpciones" Method="pa_mnt_RegistrarOpciones">
+    <Parameter Name="p_CodigoOpcion" Type="System.String" DbType="Char(4)" Direction="InOut" />
+    <Parameter Name="p_CodigoPadre" Type="System.String" DbType="Char(4)" />
+    <Parameter Name="p_Nombre" Type="System.String" DbType="VarChar(35)" />
+    <Parameter Name="p_Descripcion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_Enlace" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_FlagMenu" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="p_Estado" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="p_SegUsuarioRegistro" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Ssi.pa_mnt_ListarOpciones" Method="pa_mnt_ListarOpciones">
+    <Parameter Name="p_NombreOpcion" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="p_DescripcionOpcion" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="pa_mnt_ListarOpcionesResult">
+      <Column Name="CodigoOpcion" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoPadre" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Enlace" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FlagMenu" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioModifica" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_pro_DetectarLogin" Method="pa_pro_DetectarLogin">
+    <Parameter Name="p_CodUsuario" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="pa_pro_DetectarLoginResult">
+      <Column Name="LoginUsuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NombresUsuario" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidosUsuario" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="EstadoUsuario" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoRol" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoRolNombre" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_ListarRoles" Method="pa_mnt_ListarRoles">
+    <Parameter Name="p_NombreRol" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_DescripcionRol" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="pa_mnt_ListarRolesResult">
+      <Column Name="CodigoRol" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreRol" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionRol" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioModifica" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TodosLosCentros" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Ssi.pa_mnt_BuscarRoles" Method="pa_mnt_BuscarRoles">
+    <Parameter Name="p_CodigoRol" Type="System.String" DbType="Char(3)" />
+    <ElementType Name="pa_mnt_BuscarRolesResult">
+      <Column Name="CodigoRol" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreRol" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionRol" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegFechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioRegistro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegUsuarioModifica" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SegMaquina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TodosLosCentros" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

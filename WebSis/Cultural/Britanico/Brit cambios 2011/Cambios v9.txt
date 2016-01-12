@@ -1,0 +1,9 @@
+1. En Cursos y Talleres de Miraflores, taller de creatividad y pintura contemporánea, el botón de Me gusta aparece pegado  al subtítulo y los botones de Publicar y Compartir aparecen muy lejos del final del último párrafo del taller, ocasionando que no se visualice rápidamente
+http://www.centrocultural.britanico.edu.pe/CursoTaller_Detalle.aspx?id=105
+ 
+Como veras en esta imagen: http://www.desarrollode.com/error1.gif
+En el lado derecho esta como debe quedar, el boton Me Gusta mas separado y los botones de abajo: Publicar y Compartir que vayan antes de <<VER TODOS
+ 
+2. Lo mismo se repite aca:
+http://www.centrocultural.britanico.edu.pe/GaleriaArte_Detalle.aspx?id=44
+Como veras en esta imagen: http://www.desarrollode.com/error2.gif

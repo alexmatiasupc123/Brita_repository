@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6282CBA3-6AEA-4453-8500-1974FF1288BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Britanico.SacNet.BusinessLogic</RootNamespace>
+    <AssemblyName>Britanico.SacNet.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Britanico.SacNet.BusinessEntities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Britanico.SacNet.BusinessEntities\bin\Debug\Britanico.SacNet.BusinessEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="Britanico.SacNet.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Britanico.SacNet.DataAccess\bin\Debug\Britanico.SacNet.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxinet.Maestros.BusinessEntities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SACNET\Bin\Oxinet.Maestros.BusinessEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxinet.Maestros.BusinessLogic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SACNET\Bin\Oxinet.Maestros.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxinet.Tools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8dee34b8ab065855, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\COMPONENTES\Oxinet.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UsuarioSalaLogic.cs" />
+    <Compile Include="HelpConfiguration.cs" />
+    <Compile Include="ItemEjemplarTransitoLogic.cs" />
+    <Compile Include="OpcionesLogic.cs" />
+    <Compile Include="PrestamoLogic.cs" />
+    <Compile Include="ReportesLogic.cs" />
+    <Compile Include="RolesLogic.cs" />
+    <Compile Include="RolesOpcionesLogic.cs" />
+    <Compile Include="SolicitudTransferenciaDetalleLogic.cs" />
+    <Compile Include="SolicitudTransferenciaLogic.cs" />
+    <Compile Include="UsuariosBloqueadosLogic.cs" />
+    <Compile Include="UsuariosLogic.cs" />
+    <Compile Include="UsuariosRolesLogic.cs" />
+    <Compile Include="vwDatosVistaLogic.cs" />
+    <Compile Include="ItemEjemplarLogic.cs" />
+    <Compile Include="ItemLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolicitudCarnetLogic.cs" />
+    <Compile Include="TFeriadosLogic.cs" />
+    <Compile Include="UsuariosMotivoCorreosLogic.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

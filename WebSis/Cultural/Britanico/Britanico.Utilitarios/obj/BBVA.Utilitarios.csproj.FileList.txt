@@ -1,0 +1,10 @@
+bin\Release\BBVA.Utilitarios.dll
+bin\Release\BBVA.Utilitarios.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\BBVA.Utilitarios.dll
+obj\Release\BBVA.Utilitarios.pdb
+bin\Debug\BBVA.Utilitarios.dll
+bin\Debug\BBVA.Utilitarios.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BBVA.Utilitarios.dll
+obj\Debug\BBVA.Utilitarios.pdb

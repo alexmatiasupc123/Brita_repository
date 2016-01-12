@@ -1,0 +1,7 @@
+bin\Debug\Britanico.Web.ServiceContracts.dll
+bin\Debug\Britanico.Web.ServiceContracts.pdb
+bin\Debug\Britanico.Web.DataTypes.dll
+bin\Debug\Britanico.Web.DataTypes.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Britanico.Web.ServiceContracts.dll
+obj\Debug\Britanico.Web.ServiceContracts.pdb

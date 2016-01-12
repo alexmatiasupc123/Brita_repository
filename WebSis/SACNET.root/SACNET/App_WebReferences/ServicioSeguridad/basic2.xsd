@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://servicios2.britanico.edu.pe/ACPBServicioSeguridadWCF/Service1.svc/basic?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfUsuarioSis">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UsuarioSis" nillable="true" type="tns:UsuarioSis" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuarioSis" nillable="true" type="tns:ArrayOfUsuarioSis" />
+  <xs:complexType name="UsuarioSis">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SISTI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAV_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUAV_PASS" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuarioSis" nillable="true" type="tns:UsuarioSis" />
+  <xs:complexType name="ArrayOfPersonaSisEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonaSisEvent" nillable="true" type="tns:PersonaSisEvent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersonaSisEvent" nillable="true" type="tns:ArrayOfPersonaSisEvent" />
+  <xs:complexType name="PersonaSisEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APELLIDOMATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APELLIDOPATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CORREOELECTRONICO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ESTADOCIVIL" type="ser:char" />
+      <xs:element minOccurs="0" name="FECHANACIMIENTO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NACIONALIDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERSONA" type="xs:int" />
+      <xs:element minOccurs="0" name="SEXO" type="ser:char" />
+      <xs:element minOccurs="0" name="TELEFONO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonaSisEvent" nillable="true" type="tns:PersonaSisEvent" />
+  <xs:complexType name="ArrayOfSISTEMA">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SISTEMA" nillable="true" type="tns:SISTEMA" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSISTEMA" nillable="true" type="tns:ArrayOfSISTEMA" />
+  <xs:complexType name="SISTEMA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SISTC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTD_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SISTD_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SISTI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="SISTI_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="SISTI_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="SISTV_BDSERVER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTV_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTV_NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTV_WEBSERVER" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SISTEMA" nillable="true" type="tns:SISTEMA" />
+  <xs:complexType name="ArrayOfPERFIL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PERFIL" nillable="true" type="tns:PERFIL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPERFIL" nillable="true" type="tns:ArrayOfPERFIL" />
+  <xs:complexType name="PERFIL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PERFC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERFD_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PERFD_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PERFI_CRT_USER_DFLT" type="xs:int" />
+      <xs:element minOccurs="0" name="PERFI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="PERFI_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="PERFI_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="PERFV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERFV_NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTI_ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PERFIL" nillable="true" type="tns:PERFIL" />
+  <xs:complexType name="ArrayOfROL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ROL" nillable="true" type="tns:ROL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfROL" nillable="true" type="tns:ArrayOfROL" />
+  <xs:complexType name="ROL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ROLC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLD_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ROLD_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ROLI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ROLI_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="ROLI_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="ROLV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLV_NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTI_ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ROL" nillable="true" type="tns:ROL" />
+  <xs:complexType name="ArrayOfOPCION">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OPCION" nillable="true" type="tns:OPCION" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOPCION" nillable="true" type="tns:ArrayOfOPCION" />
+  <xs:complexType name="OPCION">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DescripcionLocal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OPCIC_IND_HIJOS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OPCIC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OPCID_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OPCID_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OPCII_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="OPCII_MENU" type="xs:int" />
+      <xs:element minOccurs="0" name="OPCII_ORDEN" type="xs:int" />
+      <xs:element minOccurs="0" name="OPCII_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="OPCII_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="OPCIV_ACCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OPCIV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OPCIV_NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Sucursal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIOPI_ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OPCION" nillable="true" type="tns:OPCION" />
+  <xs:complexType name="ArrayOfUSUARIO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="USUARIO" nillable="true" type="tns:USUARIO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUSUARIO" nillable="true" type="tns:ArrayOfUSUARIO" />
+  <xs:complexType name="USUARIO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ORSU_VALOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORUSI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUAD_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="USUAD_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="USUAI_ESTADO" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAI_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAI_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAV_APELLIDOS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUAV_APELLIDO_MATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUAV_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUAV_NOMBRES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUAV_PASS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUAV_PLANILLA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="USUARIO" nillable="true" type="tns:USUARIO" />
+  <xs:complexType name="ArrayOfROL_OPCION">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ROL_OPCION" nillable="true" type="tns:ROL_OPCION" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfROL_OPCION" nillable="true" type="tns:ArrayOfROL_OPCION" />
+  <xs:complexType name="ROL_OPCION">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OPCII_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="OPCIV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OPCIV_NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ROPEC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROPED_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ROPED_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ROPEI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ROPEI_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="ROPEI_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="TIOPV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIOPV_NOMBRE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ROL_OPCION" nillable="true" type="tns:ROL_OPCION" />
+  <xs:complexType name="ArrayOfPERFIL_ROL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PERFIL_ROL" nillable="true" type="tns:PERFIL_ROL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPERFIL_ROL" nillable="true" type="tns:ArrayOfPERFIL_ROL" />
+  <xs:complexType name="PERFIL_ROL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PERFI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="PEROC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PEROD_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PEROD_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PEROI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="PEROI_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="PEROI_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="ROLI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ROLV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLV_NOMBRE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PERFIL_ROL" nillable="true" type="tns:PERFIL_ROL" />
+  <xs:complexType name="ArrayOfUSUARIO_PERFIL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="USUARIO_PERFIL" nillable="true" type="tns:USUARIO_PERFIL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUSUARIO_PERFIL" nillable="true" type="tns:ArrayOfUSUARIO_PERFIL" />
+  <xs:complexType name="USUARIO_PERFIL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PERFI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="PERFV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERFV_NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USPEC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USPED_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="USPED_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="USPEI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="USPEI_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="USPEI_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAI_ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="USUARIO_PERFIL" nillable="true" type="tns:USUARIO_PERFIL" />
+  <xs:complexType name="ArrayOfSISTEMA_USUARIO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SISTEMA_USUARIO" nillable="true" type="tns:SISTEMA_USUARIO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSISTEMA_USUARIO" nillable="true" type="tns:ArrayOfSISTEMA_USUARIO" />
+  <xs:complexType name="SISTEMA_USUARIO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SISTI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="SISTV_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTV_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SISTV_NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIUSC_SIT_REG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIUSD_FEC_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIUSD_FEC_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIUSI_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="SIUSI_USU_CREA" type="xs:int" />
+      <xs:element minOccurs="0" name="SIUSI_USU_MODI" type="xs:int" />
+      <xs:element minOccurs="0" name="USUAI_ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SISTEMA_USUARIO" nillable="true" type="tns:SISTEMA_USUARIO" />
+</xs:schema>

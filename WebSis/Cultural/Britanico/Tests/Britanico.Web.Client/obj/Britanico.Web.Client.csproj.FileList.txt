@@ -1,0 +1,10 @@
+bin\Debug\Britanico.Web.Client.exe.config
+bin\Debug\Britanico.Web.Client.exe
+bin\Debug\Britanico.Web.Client.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Britanico.Web.Client.Properties.Resources.resources
+obj\Debug\Britanico.Web.Client.MainForm.resources
+obj\Debug\Britanico.Web.Client.ResultsGrid.resources
+obj\Debug\Britanico.Web.Client.csproj.GenerateResource.Cache
+obj\Debug\Britanico.Web.Client.exe
+obj\Debug\Britanico.Web.Client.pdb

@@ -1,0 +1,65 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFDE8019-CDC4-45E5-A272-BE56A5497602}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Britanico.XML</RootNamespace>
+    <AssemblyName>Britanico.XML</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneraXML.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Britanico.Interfaces\Britanico.Interfaces.csproj">
+      <Project>{6FB6738E-6B7E-4107-813B-0E0A058C99BE}</Project>
+      <Name>Britanico.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Britanico.Utilitarios\Britanico.Utilitarios.csproj">
+      <Project>{F9BF8E2D-F5D9-40F8-B75C-D056E8637B54}</Project>
+      <Name>Britanico.Utilitarios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Source\Business Component\Britanico.Web.BusinessEntities\Britanico.Web.BusinessEntities.csproj">
+      <Project>{846D1EEF-BE00-4145-8E95-C689608147C7}</Project>
+      <Name>Britanico.Web.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Source\Business Component\Britanico.Web.BusinessLogic\Britanico.Web.BusinessLogic.csproj">
+      <Project>{0814C39C-AC05-40E3-8F07-08CF6641A1FB}</Project>
+      <Name>Britanico.Web.BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

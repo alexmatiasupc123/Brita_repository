@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://servicios2.britanico.edu.pe/ACPBServicioSeguridadWCF/Service1.svc/basic?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WebSeguridadSIS_ServicioWCF" />
+  <xs:import schemaLocation="http://servicios2.britanico.edu.pe/ACPBServicioSeguridadWCF/Service1.svc/basic?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" />
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WebSeguridadSIS_ServicioWCF" minOccurs="0" name="composite" nillable="true" type="q1:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WebSeguridadSIS_ServicioWCF" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q2:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsuarioSistema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CodSistema" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsuarioSistemaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetUsuarioSistemaResult" nillable="true" type="q3:ArrayOfUsuarioSis" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatosUusuarioPersona_SisEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idusuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatosUusuarioPersona_SisEventResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetDatosUusuarioPersona_SisEventResult" nillable="true" type="q4:ArrayOfPersonaSisEvent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntSistema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntSistemaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntSistemaResult" nillable="true" type="q5:ArrayOfSISTEMA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Sistema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="obj" nillable="true" type="q6:SISTEMA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_SistemaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPerfilUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+        <xs:element minOccurs="0" name="idSistema" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPerfilUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetPerfilUsuarioResult" nillable="true" type="q7:ArrayOfPERFIL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPerfilesSistema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idSistema" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPerfilesSistemaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetPerfilesSistemaResult" nillable="true" type="q8:ArrayOfPERFIL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntPerfil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsis" type="xs:int" />
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntPerfilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntPerfilResult" nillable="true" type="q9:ArrayOfPERFIL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Perfil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="obj" nillable="true" type="q10:PERFIL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_PerfilResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntRol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsis" type="xs:int" />
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntRolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntRolResult" nillable="true" type="q11:ArrayOfROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Rol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="obj" nillable="true" type="q12:ROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_RolResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOpcionesPerfil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idPerfil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOpcionesPerfilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetOpcionesPerfilResult" nillable="true" type="q13:ArrayOfOPCION" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntOpcion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsis" type="xs:int" />
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntOpcionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntOpcionResult" nillable="true" type="q14:ArrayOfOPCION" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Opcion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="obj" nillable="true" type="q15:OPCION" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_OpcionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntUSUARIO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="param1" type="xs:int" />
+        <xs:element minOccurs="0" name="param2" type="xs:int" />
+        <xs:element minOccurs="0" name="valparam2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntUSUARIOResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntUSUARIOResult" nillable="true" type="q16:ArrayOfUSUARIO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_USUARIO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="obj" nillable="true" type="q17:USUARIO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_USUARIOResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntRol_Opcion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsis" type="xs:int" />
+        <xs:element minOccurs="0" name="idrol" type="xs:int" />
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntRol_OpcionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntRol_OpcionResult" nillable="true" type="q18:ArrayOfROL_OPCION" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Rol_Opcion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="lobj" nillable="true" type="q19:ArrayOfROL_OPCION" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Rol_OpcionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntPerfil_Rol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsis" type="xs:int" />
+        <xs:element minOccurs="0" name="idperfil" type="xs:int" />
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntPerfil_RolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntPerfil_RolResult" nillable="true" type="q20:ArrayOfPERFIL_ROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Perfil_Rol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="lobj" nillable="true" type="q21:ArrayOfPERFIL_ROL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Perfil_RolResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntUsuario_Perfiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idsis" type="xs:int" />
+        <xs:element minOccurs="0" name="idpuser" type="xs:int" />
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntUsuario_PerfilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntUsuario_PerfilesResult" nillable="true" type="q22:ArrayOfUSUARIO_PERFIL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Usuario_Perfiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="lobj" nillable="true" type="q23:ArrayOfUSUARIO_PERFIL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Usuario_PerfilesResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntUsuario_Sistemas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idpuser" type="xs:int" />
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMntUsuario_SistemasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="GetMntUsuario_SistemasResult" nillable="true" type="q24:ArrayOfSISTEMA_USUARIO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Usuario_Sistemas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/DataContract.DataContracts" minOccurs="0" name="lobj" nillable="true" type="q25:ArrayOfSISTEMA_USUARIO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ins_Usuario_SistemasResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gethola">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getholaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getholaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,8 @@
+<flash_project name="~cabecera_interna" version="1">
+	<project_file filetype="fla" path="./~cabecera_interna.fla" profile=""/>
+	<project_file filetype="as" path="./Preload.as"/>
+	<project_file filetype="as" path="./mx/transitions/OnEnterFrameBeacon.as"/>
+	<project_file filetype="as" path="./mx/transitions/BroadcasterMX.as"/>
+	<project_file filetype="as" path="./mx/transitions/Tween.as"/>
+	<project_file filetype="as" path="./mx/transitions/easing/Regular.as"/>
+</flash_project>

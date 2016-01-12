@@ -1,0 +1,5 @@
+bin\Debug\Britanico.Logger.dll
+bin\Debug\Britanico.Logger.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Britanico.Logger.dll
+obj\Debug\Britanico.Logger.pdb

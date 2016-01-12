@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Variable.aspx.cs" Inherits="Variable" ContentType="text/xml" EnableTheming="false" CodePage="1252" EnableSessionState="True"%>

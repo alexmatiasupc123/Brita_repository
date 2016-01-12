@@ -1,0 +1,110 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0814C39C-AC05-40E3-8F07-08CF6641A1FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Britanico.Web.BusinessLogic</RootNamespace>
+    <AssemblyName>Britanico.Web.BusinessLogic</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NoTransaccionales\BLActividadTeatroNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLBannerNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLCategoriaEventoNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLCursoTallerNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLGaleriaArteNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLGaleriaArchivoNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLProgramacionAuditorioNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLSedeNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLSegmentoPublicoNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLSuscriptorNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLConcursoNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLProyectoNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLProduccionNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLPublicacionNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLGaleriaArteDetalleNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLBritanicoRadioNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLConcursoTemporadaNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLEventoNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLNoticiaNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLUsuarioNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLBoletinNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLInformacionNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLMuestraGaleriaNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLHistoriaTeatroNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLCabeceraNTAD.cs" />
+    <Compile Include="NoTransaccionales\BLAgendaCulturalNTAD.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaccionales\BLActividadTeatroTAD.cs" />
+    <Compile Include="Transaccionales\BLBannerTAD.cs" />
+    <Compile Include="Transaccionales\BLCursoTallerTAD.cs" />
+    <Compile Include="Transaccionales\BLGaleriaArteTAD.cs" />
+    <Compile Include="Transaccionales\BLGaleriaImagenTAD.cs" />
+    <Compile Include="Transaccionales\BLProgramacionAuditorioTAD.cs" />
+    <Compile Include="Transaccionales\BLSedeTAD.cs" />
+    <Compile Include="Transaccionales\BLSuscriptopTAD.cs" />
+    <Compile Include="Transaccionales\BLBritanicoRadioTAD.cs" />
+    <Compile Include="Transaccionales\BLConcursoTemporadaTAD.cs" />
+    <Compile Include="Transaccionales\BLProyectoTAD.cs" />
+    <Compile Include="Transaccionales\BLProduccionTAD.cs" />
+    <Compile Include="Transaccionales\BLPublicacionTAD.cs" />
+    <Compile Include="Transaccionales\BLConcursoTAD.cs" />
+    <Compile Include="Transaccionales\BLGaleriaArteDetalleTAD.cs" />
+    <Compile Include="Transaccionales\BLNoticiaTAD.cs" />
+    <Compile Include="Transaccionales\BLUsuarioTAD.cs" />
+    <Compile Include="Transaccionales\BLBoletinTAD.cs" />
+    <Compile Include="Transaccionales\BLInformacionTAD.cs" />
+    <Compile Include="Transaccionales\BLMuestraGaleriaTAD.cs" />
+    <Compile Include="Transaccionales\BLHistoriaTeatroTAD.cs" />
+    <Compile Include="Transaccionales\BLCabeceraTAD.cs" />
+    <Compile Include="Transaccionales\BLAgendaCulturalTAD.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Britanico.Interfaces\Britanico.Interfaces.csproj">
+      <Project>{6FB6738E-6B7E-4107-813B-0E0A058C99BE}</Project>
+      <Name>Britanico.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Britanico.Utilitarios\Britanico.Utilitarios.csproj">
+      <Project>{F9BF8E2D-F5D9-40F8-B75C-D056E8637B54}</Project>
+      <Name>Britanico.Utilitarios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data Access Layer\Britanico.Web.DataAccess\Britanico.Web.DataAccess.csproj">
+      <Project>{CC8FD5CD-B582-44A2-ADD3-56206F1697F1}</Project>
+      <Name>Britanico.Web.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Britanico.Web.BusinessEntities\Britanico.Web.BusinessEntities.csproj">
+      <Project>{846D1EEF-BE00-4145-8E95-C689608147C7}</Project>
+      <Name>Britanico.Web.BusinessEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

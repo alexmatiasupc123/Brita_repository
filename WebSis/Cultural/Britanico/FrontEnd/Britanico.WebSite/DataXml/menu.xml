@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos>
+	<boton>
+		<p_0>
+			<titulo>GaleríaJohn Harriman</titulo>
+			<link>#</link>
+		</p_0>
+		<p_1>
+			<btn_categoria>1</btn_categoria>
+			<titulo>Sala de Exposición los Jardines</titulo>
+			<link>#</link>
+		</p_1>
+		<p_2>
+			<btn_categoria>2</btn_categoria>
+			<titulo>otra galeria</titulo>
+			<link>#</link>
+		</p_2>
+
+	</boton>
+</datos>

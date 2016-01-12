@@ -1,0 +1,1 @@
+- banners principal no se muestra en firefox

@@ -1,0 +1,87 @@
+  <asp:Panel SkinID="paneles" runat="server" Font-Names="Arial" Font-Size="13px" ForeColor="#333399"></asp:Panel>
+ <asp:Label SkinID="lblTitulos" runat="server" Font-Bold="True" Font-Names="Arial"
+        Font-Size="18pt" ForeColor="#333333"></asp:Label>
+ <asp:Label SkinID="lblCampos" runat="server" Font-Bold="False" Font-Names="Arial"
+ Font-Size="12px" ForeColor="#101E7B"></asp:Label>
+    
+<asp:TextBox Runat="server" SkinID="Textos" Font-Size="12px" ForeColor="#999999" />
+<asp:DropDownList runat="server" SkinID="ddlListas" ForeColor="Black" Font-Size="12px" Font-Names="Arial" />
+<asp:Label SkinID="tError" runat="server" Font-Size="12px" ForeColor="#FE0000"></asp:Label>                        
+<asp:Label SkinID="camposNombre" runat="server" Font-Bold="True" Font-Names="Arial"
+        Font-Size="12px" ForeColor="Black"></asp:Label>                        
+<asp:HyperLink SkinID="Links" runat="server" Font-Names="Arial" Font-Size="11px" ForeColor="DimGray"></asp:HyperLink>
+<asp:HyperLink SkinID="Links_A" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="#FFFFFF"></asp:HyperLink>
+
+<asp:HyperLink SkinID="Links_b" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="#78a4d1"></asp:HyperLink>
+<asp:CheckBox SkinID="CheckBox_a" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="Gray" />
+<asp:RadioButton SkinID="RadioButton_a" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="Gray" />
+<asp:RadioButtonList SkinID="RadioButtonList_a" runat="server" Font-Bold="False" Font-Names="Arial" Font-Size="12px" ForeColor="#333399"></asp:RadioButtonList>
+<asp:CheckBoxList SkinID="CheckBoxList_a" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="Gray"></asp:CheckBoxList>
+
+<asp:ImageButton SkinID="Baja" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/baja.png" ToolTip="Dar de Baja" />
+<asp:ImageButton SkinID="Alta" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/alta.png" ToolTip="Dar de Alta" />
+
+<asp:ImageButton SkinID="Primero" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/prime_a.jpg" ToolTip="Primero" />
+<asp:ImageButton SkinID="Anterior" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/ante_a.jpg" ToolTip="Anterior" />
+<asp:ImageButton SkinID="Siguiente" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/sig_a.jpg" ToolTip="Siguiente" />
+<asp:ImageButton SkinID="Ultimo" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/ulti_a.jpg" ToolTip="Ultimo" />
+
+
+<asp:ImageButton SkinID="Abajo" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/abajo.jpg" ToolTip="Bajar" />
+<asp:ImageButton SkinID="Arriba" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/arriba.jpg" ToolTip="Subir" />
+
+
+    <asp:ImageButton SkinID="bAceptar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/aceptar.jpg" ToolTip="Aceptar"/>
+    <asp:ImageButton SkinID="bLimpiar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/btnLimpiar.jpg" ToolTip="Limpiar"  />
+    <asp:ImageButton SkinID="bCancelar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/btnCancelar.jpg" ToolTip="Cancelar" />
+    
+    <asp:ImageButton SkinID="Actualizar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/arrow_refresh.png" ToolTip="Actualizar" />
+    <asp:ImageButton SkinID="Eliminar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/delete.png" ToolTip="Eliminar" />
+    <asp:ImageButton SkinID="Nuevo" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/page_white_text.png" ToolTip="Nuevo" />
+    <asp:ImageButton SkinID="Editar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/application_edit.png" ToolTip="Editar" />
+    <asp:ImageButton SkinID="Cancelar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/arrow_undo.png" ToolTip="Cancelar" />
+    <asp:ImageButton SkinID="Guardar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/disk.png" ToolTip="Actualizar" />
+    <asp:ImageButton SkinID="Seleccionar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/resultset_next.png" ToolTip="Actualizar" />
+
+    <asp:ImageButton SkinID="Buscar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/buscar_a.jpg" ToolTip="Buscar" />
+    <asp:ImageButton SkinID="Agregar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/agregar.jpg" ToolTip="Agregar" />
+    <asp:ImageButton SkinID="Aceptar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/aceptar_a.jpg" ToolTip="Aceptar" />
+    <asp:ImageButton SkinID="BuscarComponente" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/busca_componentes.jpg" ToolTip="Buscar Cuenta" />
+    <asp:ImageButton SkinID="Usuario" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/usuario_a.jpg" ToolTip="Usuario" />
+   
+    <asp:ImageButton SkinID="Imprimir" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/printer.png" ToolTip="Imprimir" />
+    <asp:ImageButton SkinID="Mail" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/email.png" ToolTip="Enviar por Mail" />
+    <asp:ImageButton SkinID="Reporte" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/reporte_a.jpg" ToolTip="Reporte" />
+    <asp:ImageButton SkinID="Generar" runat="server" ImageUrl="~/App_Themes/SkinBritanico/Images/btngenerar.jpg" ToolTip="Generar" />
+ 
+   <asp:LinkButton SkinID="LinksDetalle" runat="server" Font-Names="Arial" Font-Size="11px" ForeColor="gray"></asp:LinkButton>
+ 
+<asp:SiteMapPath SkinID="SiteMapPath" runat="server">
+<CurrentNodeStyle CssClass="current" Font-Bold="True" Font-Names="Arial" Font-Size="12px"
+ForeColor="White" />
+<NodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="#F1F5FA" />
+<RootNodeStyle CssClass="root" Font-Bold="True" Font-Names="Arial" Font-Size="12px"
+                                            ForeColor="#D2E1F0" />
+                                    </asp:SiteMapPath>
+    
+     <asp:TreeView SkinID="Principal" runat="server" ShowLines="True" ExpandDepth="1">
+        <ParentNodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="#FF8000" />
+        <RootNodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="#295F94" />
+        <LeafNodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="Gray" />
+    </asp:TreeView>
+    <asp:TreeView SkinID="FlujoBalance" runat="server" ShowLines="True" ExpandDepth="1">
+        <ParentNodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="12px" ForeColor="#295F94" />
+        <RootNodeStyle Font-Bold="True" Font-Italic="False" ForeColor="#78A4D1" />
+        <LeafNodeStyle Font-Bold="True" Font-Names="Arial" ForeColor="#666666" />
+    </asp:TreeView>
+ 
+  <asp:CompareValidator SkinID="cvError" runat="server" ForeColor="#804000"></asp:CompareValidator>
+ <asp:RequiredFieldValidator SkinID="rfvError" runat="server" ForeColor="#804000"></asp:RequiredFieldValidator>
+ <asp:RangeValidator SkinID="rvError" runat="server" ForeColor="#FE0000"></asp:RangeValidator>
+ <asp:RegularExpressionValidator SkinID="revError" runat="server" ForeColor="#804000"></asp:RegularExpressionValidator>
+ <asp:CustomValidator SkinID="cvError" runat="server" ForeColor="#FE0000"></asp:CustomValidator>
+ 
+ 
+ <asp:LinkButton SkinID="lnkBoton" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="12px" Font-Underline="False" ForeColor="Maroon"></asp:LinkButton>
+ <asp:LinkButton SkinID="lnkPrincipal" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="12px" Font-Underline="False" ForeColor="#295f94"></asp:LinkButton>
+                       

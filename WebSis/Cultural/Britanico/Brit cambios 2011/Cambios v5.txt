@@ -1,0 +1,2 @@
+-request id primero y despues session id
+-imagen con ip + puerto

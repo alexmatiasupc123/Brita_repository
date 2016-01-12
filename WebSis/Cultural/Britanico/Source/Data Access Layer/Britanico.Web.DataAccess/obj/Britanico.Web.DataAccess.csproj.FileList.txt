@@ -1,0 +1,13 @@
+bin\Debug\Britanico.Web.DataAccess.dll
+bin\Debug\Britanico.Web.DataAccess.pdb
+bin\Debug\Britanico.Excepcion.dll
+bin\Debug\Britanico.Web.BusinessEntities.dll
+bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+bin\Debug\Britanico.Excepcion.pdb
+bin\Debug\Britanico.Web.BusinessEntities.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Britanico.Web.DataAccess.Generic.GenericResources.resources
+obj\Debug\Britanico.Web.DataAccess.csproj.GenerateResource.Cache
+obj\Debug\Britanico.Web.DataAccess.dll
+obj\Debug\Britanico.Web.DataAccess.pdb
