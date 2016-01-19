@@ -36,7 +36,7 @@ RETURN
 select 
 numero_documento collate Latin1_General_CI_AS as ID ,  
 --convert(int,codigo_unico) as CODE_BAR,
-codigo_unico collate Latin1_General_CI_AS as CODE_BAR,
+convert(int,codigo_unico)+'' collate Latin1_General_CI_AS as COD_BAR,
 (rtrim(apellido_paterno) + ' ' + rtrim(apellido_materno) + ', ' + rtrim(nombre) collate Latin1_General_CI_AS) as NOMBRE,
 (case (sexo) when 1 then 'M' else 'F' end) collate Latin1_General_CI_AS as GENERO,
 CONVERT(CHAR(10),fecha_nacimiento,112) collate Latin1_General_CI_AS as FNAC,
