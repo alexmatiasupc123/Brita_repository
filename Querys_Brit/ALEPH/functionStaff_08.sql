@@ -73,6 +73,15 @@ and
 year(t.fecha_ingreso_compania)<=convert(int,@cletivo)
 and
 month(t.fecha_ingreso_compania)<=dbo.sf_sesionMes(@sesion)
+and t.fecha_registro_usuario=
+(
+
+	SELECT MAX(x.fecha_registro_usuario)
+	FROM JAGUAR.ADRYAN.dbo.trabajador x
+	where x.codigo_unico=t.codigo_unico
+
+) 
+--is not null
 --order by fecha_ingreso_compania asc
 --(rtrim(apellido_paterno) + ' ' + rtrim(apellido_materno) + ', ' + rtrim(nombre)) like '%MENDOZA%'
 --convert(int,codigo_unico)=51727

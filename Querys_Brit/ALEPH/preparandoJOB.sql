@@ -23,7 +23,7 @@ declare @SES varchar(1)
 declare @CLA varchar(6)
 set @ANIO='2016'
 set @SES='A'
-set @CLA='B07'
+set @CLA=null
 
 /*
 create table #temporalAleph(
@@ -66,14 +66,56 @@ create table #temporalAleph(
 	order by COD_BAR
 	
 --
+delete from #temporalAleph
 
 
-select ID,MAX(COD_BAR)COD_BAR,NOMBRE,GENERO,FNAC,LUGAR,TELEFONO,CELULAR,MAX(DIRECCION)DIRECCION,EMAIL,MAX(F_FINAL)F_FINAL
+--//LA MAGIA
+/*
+74835428
+74951564   
+75014414   
+48091521   
+*/
+   
+select *
+		from #temporalAleph w
+		where F_FINAL = 
+		(
+			select MAX(x.F_FINAL) 
+			from #temporalAleph x
+			where x.ID=w.ID
+
+		)
+and ID='74835428'
+
+
+
+--//---
+
+select ID,COD_BAR,NOMBRE,GENERO,FNAC,LUGAR,TELEFONO,CELULAR,MAX(DIRECCION)DIRECCION,EMAIL,MAX(F_FINAL)F_FINAL
 ,ESTATUS,TIPO,SUB_BIB,NOTA_1,NOTA_2,MAX(NOTA_3)NOTA_3,[LOCAL_LIB],[PIP_LIB],[PIB_TOTAL],[PIB_ACTIVA],[TIT_LIMITE]
 from #temporalAleph
-where convert(int,ID)=43690684
-group by ID,NOMBRE,GENERO,FNAC,LUGAR,TELEFONO,CELULAR,EMAIL
+where ID='70210672'
+group by ID,COD_BAR,NOMBRE,GENERO,FNAC,LUGAR,TELEFONO,CELULAR,EMAIL
 ,ESTATUS,TIPO,SUB_BIB,NOTA_1,NOTA_2,[LOCAL_LIB],[PIP_LIB],[PIB_TOTAL],[PIB_ACTIVA],[TIT_LIMITE]
+order by COD_BAR
+
+select ID,count(ID)Veces
+from #temporalAleph
+group by ID
+having count(ID)>1
+
+------
+/*
+
+26731352    PROFESOR CON MISMO DNI
+72291642
+76700439
+
+*/
+---------
+
+
 
 
 /*
