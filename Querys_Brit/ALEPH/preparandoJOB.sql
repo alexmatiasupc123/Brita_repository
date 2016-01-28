@@ -2,6 +2,17 @@ alter procedure sp_jobAleph @clectivo varchar(4), @sesion varchar(1),@clase varc
 as
 begin
 
+--UTILIZANDO UNA TABLA TEMPORAL
+
+create table #temporalAlephProc(ID varchar(12),	COD_BAR varchar(200),NOMBRE varchar(200),GENERO varchar(2),FNAC varchar(8),
+	LUGAR varchar(200),TELEFONO varchar(30),CELULAR varchar(30),DIRECCION varchar(400),EMAIL varchar(80),F_FINAL varchar(8),
+	ESTATUS varchar(2),TIPO varchar(2),SUB_BIB varchar(200),NOTA_1 varchar(200),NOTA_2 varchar(200),NOTA_3 varchar(200),
+	LOCAL_LIB varchar(20),PIP_LIB varchar(20),PIB_TOTAL varchar(4),PIB_ACTIVA varchar(4),TIT_LIMITE varchar(4),ULT_F_NOMBRE datetime,STATUS_DT datetime,CRSE_ID varchar(10),LAST_UPD_DT_STMP_INS datetime  ) 
+	
+
+
+	--EL UNION CON ALUMNOS , BECADOS Y STAFF
+	insert into #temporalAlephProc
 	select *
 	from dbo.sf_alumnosAleph(@clectivo,@sesion,@clase)
 	union all
@@ -10,12 +21,32 @@ begin
 	union all
 	select *
 	from dbo.sf_staffAleph(@clectivo,@sesion)
-	order by COD_BAR
-	--faltaria los restantes
+	--order by COD_BAR
+	
+	--///UTILIZANDO EL TEMPORAL -- PONER SOLO LAS COLUMNAS NECESARIAS QUITAR EL *
+	
+	select 
+		*
+		from #temporalAlephProc w
+		where F_FINAL = 
+		(
+			select MAX(x.F_FINAL) 
+			from #temporalAlephProc x
+			where x.COD_BAR=w.COD_BAR
+		) 
+		
+		AND CRSE_ID = (
+			select MIN(y.CRSE_ID)
+			from #temporalAlephProc y
+			where y.COD_BAR=w.COD_BAR
+		)
+		--AND ESTATUS='08'
+		--order by COD_BAR
+			
 
 end
 
-exec dbo.sp_jobAleph '2016','A','B07'
+exec dbo.sp_jobAleph '2016','A',null
 ---
 
 declare @ANIO varchar(4)

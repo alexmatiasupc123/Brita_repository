@@ -1,26 +1,26 @@
 
 --function para la sesion con el mes
 alter function sf_sesionMes(@sesion varchar(1))
-returns int
+returns varchar(2)
 as
 begin
 
-declare @numMes int
+declare @numMes varchar(2)
 
---sesiones por mes
+--sesiones por mes +1
 set @numMes=(case @sesion
-	when 'A' then 1
-	when 'B' then 2
-	when 'C' then 3
-	when 'D' then 4
-	when 'E' then 5
-	when 'F' then 6
-	when 'G' then 7
-	when 'H' then 8
-	when 'I' then 9
-	when 'J' then 10
-	when 'K' then 11
-	when 'L' then 12
+	when 'A' then '01'
+	when 'B' then '02'
+	when 'C' then '03'
+	when 'D' then '04'
+	when 'E' then '05'
+	when 'F' then '06'
+	when 'G' then '07'
+	when 'H' then '08'
+	when 'I' then '09'
+	when 'J' then '10'
+	when 'K' then '11'
+	when 'L' then '12'
 	else null
 end)
 
@@ -57,7 +57,11 @@ cc.nombre_unidad_funcional collate Latin1_General_CI_AS as NOTA3,
 '' collate Latin1_General_CI_AS as PIP_LIB,
 '' collate Latin1_General_CI_AS as PIB_TOTAL,
 '' collate Latin1_General_CI_AS as PIB_ACTIVA,
-'' collate Latin1_General_CI_AS as TIT_LIMITE
+'' collate Latin1_General_CI_AS as TIT_LIMITE,
+null as ULT_F_NOMBRE,
+null as STATUS_DT,
+''  collate Latin1_General_CI_AS as CRSE_ID,
+null as LAST_UPD_DT_STMP_INS
 --,t.fecha_ingreso_compania    
 from JAGUAR.ADRYAN.dbo.trabajador t
 inner join JAGUAR.ADRYAN.dbo.Tbl_puesto_compania tt on
@@ -70,15 +74,16 @@ where
 -- D = DOCENTES PROFESORES
 t.tipo_trabajador in ('A','E','D','P') --esto sirve para el tipo de usuario
 and
-year(t.fecha_ingreso_compania)<=convert(int,@cletivo)
-and
-month(t.fecha_ingreso_compania)<=dbo.sf_sesionMes(@sesion)
+--year(t.fecha_ingreso_compania)<=convert(int,@cletivo)
+t.fecha_ingreso_compania< DATEADD(MONTH,+1,(convert(datetime,(@cletivo+''+dbo.sf_sesionMes(@sesion)+'01')) ))
+--and DATEADD(YEAR,+1, [CLA].END_DT)
+--month(t.fecha_ingreso_compania)<=dbo.sf_sesionMes(@sesion)
 and t.fecha_registro_usuario=
 (
 
 	SELECT MAX(x.fecha_registro_usuario)
 	FROM JAGUAR.ADRYAN.dbo.trabajador x
-	where x.codigo_unico=t.codigo_unico
+	where convert(int,x.codigo_unico)=convert(int,t.codigo_unico)
 
 ) 
 --is not null
@@ -90,4 +95,8 @@ and t.fecha_registro_usuario=
 
 )
 
---select * from sf_staffAleph ('2015','L')
+select * from sf_staffAleph ('2015','L')
+where COD_BAR='51727'
+
+
+
