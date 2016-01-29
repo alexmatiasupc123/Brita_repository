@@ -26,7 +26,7 @@ create table #temporalAlephProc(ID varchar(12),	COD_BAR varchar(200),NOMBRE varc
 	--///UTILIZANDO EL TEMPORAL -- PONER SOLO LAS COLUMNAS NECESARIAS QUITAR EL *
 	
 	select 
-		*
+		ID,COD_BAR,NOMBRE,GENERO,FNAC,LUGAR,TELEFONO,CELULAR,DIRECCION,EMAIL,F_FINAL,ESTATUS,TIPO,SUB_BIB,NOTA_1,NOTA_2,NOTA_3,LOCAL_LIB,PIP_LIB,PIB_TOTAL,PIB_ACTIVA,TIT_LIMITE
 		from #temporalAlephProc w
 		where F_FINAL = 
 		(
@@ -40,8 +40,9 @@ create table #temporalAlephProc(ID varchar(12),	COD_BAR varchar(200),NOMBRE varc
 			from #temporalAlephProc y
 			where y.COD_BAR=w.COD_BAR
 		)
+		--and ID <> ''
 		--AND ESTATUS='08'
-		--order by COD_BAR
+		order by COD_BAR
 			
 
 end
