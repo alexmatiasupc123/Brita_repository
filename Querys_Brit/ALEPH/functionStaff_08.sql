@@ -45,7 +45,7 @@ telefono_movil collate Latin1_General_CI_AS as TELEFONO,
 telefono_movil collate Latin1_General_CI_AS as CELULAR,
 'DATO PERSONAL DEL TRABAJADOR' collate Latin1_General_CI_AS as DIRECCION,
 email_trabajo collate Latin1_General_CI_AS as EMAIL,
-'20161231' collate Latin1_General_CI_AS as F_FINAL,
+'29990101' collate Latin1_General_CI_AS as F_FINAL,
 --F_FINAL
 '08' collate Latin1_General_CI_AS as ESTATUS,
 '' collate Latin1_General_CI_AS as TIPO,
@@ -61,7 +61,9 @@ cc.nombre_unidad_funcional collate Latin1_General_CI_AS as NOTA3,
 null as ULT_F_NOMBRE,
 null as STATUS_DT,
 ''  collate Latin1_General_CI_AS as CRSE_ID,
-null as LAST_UPD_DT_STMP_INS
+null as LAST_UPD_DT_STMP_INS,
+null as START_DT,
+null as END_DT
 --,t.fecha_ingreso_compania    
 from JAGUAR.ADRYAN.dbo.trabajador t
 inner join JAGUAR.ADRYAN.dbo.Tbl_puesto_compania tt on
@@ -90,11 +92,14 @@ and t.fecha_registro_usuario=
 --order by fecha_ingreso_compania asc
 --(rtrim(apellido_paterno) + ' ' + rtrim(apellido_materno) + ', ' + rtrim(nombre)) like '%MENDOZA%'
 --convert(int,codigo_unico)=51727
---situacion_trabajador='A'
+and t.situacion_trabajador='A'
 --nombre_unidad_funcional='SISTEMAS'
 
 )
 
+--es un procedure que se lanzara y que mantendra la tabla intemedia actualizada
+--en caso de los staff si alguien se va ya no aparecerá y si no aparece eta bien :D
+--si mas entran aparecerán más bien se tiene que cambiar por fecha :D no por sesion
 select * from sf_staffAleph ('2015','L')
 where COD_BAR='51727'
 
