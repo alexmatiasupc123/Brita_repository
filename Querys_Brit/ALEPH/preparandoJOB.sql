@@ -13,21 +13,21 @@ create table #temporalAlephProc(ID varchar(12),	COD_BAR varchar(200),NOMBRE varc
 	--EL UNION CON ALUMNOS , BECADOS Y STAFF
 	insert into #temporalAlephProc
 	select *
-	from dbo.sf_alumnosAleph(@clectivo,@sesion,@clase)
+	from dbo.sf_alumnosAleph(@clectivo,@sesion,@clase)	
 	union all
 	select *
 	from dbo.sf_becadosAleph(@clectivo,@sesion,@clase)
 	union all
 	select *
 	from dbo.sf_staffAleph(@clectivo,@sesion)
-	--order by COD_BAR
+	--order by COD_BAR  
 	
 	--///UTILIZANDO EL TEMPORAL -- PONER SOLO LAS COLUMNAS NECESARIAS QUITAR EL *
 	--La idea es usar el link server para:
 	--insert into [ALEPH].[BR_USUARIOS].[dbo].[BR_USUARIOS_ALEPH_TST]
 
-
-	select 
+		
+		select 
 		ID,COD_BAR,NOMBRE,GENERO,FNAC,LUGAR,TELEFONO,CELULAR,DIRECCION,EMAIL,F_FINAL,ESTATUS,TIPO,SUB_BIB,NOTA_1,NOTA_2,NOTA_3,LOCAL_LIB,PIP_LIB,PIB_TOTAL,PIB_ACTIVA,TIT_LIMITE
 		from #temporalAlephProc w
 		where F_FINAL = 
@@ -43,11 +43,10 @@ create table #temporalAlephProc(ID varchar(12),	COD_BAR varchar(200),NOMBRE varc
 			where y.COD_BAR=w.COD_BAR
 		)
 		--and ID <> ''
-		--AND ESTATUS='08'
 		order by COD_BAR
 			
 		
 end
 
-exec dbo.sp_jobAleph '2016','L',null
+exec dbo.sp_jobAleph '2015','L',null
 ---

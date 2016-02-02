@@ -75,9 +75,9 @@ where
 -- A = EMPLEADOS ADM.CENTROS (CAJEROS, EMPLEADOS EN CENTROS)
 -- D = DOCENTES PROFESORES
 t.tipo_trabajador in ('A','E','D','P') --esto sirve para el tipo de usuario
-and
+--and
 --year(t.fecha_ingreso_compania)<=convert(int,@cletivo)
-t.fecha_ingreso_compania< DATEADD(MONTH,+1,(convert(datetime,(@cletivo+''+dbo.sf_sesionMes(@sesion)+'01')) ))
+--t.fecha_ingreso_compania< DATEADD(MONTH,+1,(convert(datetime,(@cletivo+''+dbo.sf_sesionMes(@sesion)+'01')) ))
 --and DATEADD(YEAR,+1, [CLA].END_DT)
 --month(t.fecha_ingreso_compania)<=dbo.sf_sesionMes(@sesion)
 and t.fecha_registro_usuario=

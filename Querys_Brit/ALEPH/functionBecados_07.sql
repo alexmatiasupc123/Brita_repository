@@ -107,6 +107,7 @@ WHERE
 			where w.EMPLID=INS.EMPLID
 		)  
 		
+		/*
 		--AND CLA.DT
 		AND CLA.END_DT = (
 			SELECT MAX(x.END_DT)
@@ -122,7 +123,7 @@ WHERE
 			AND x.CLASS_NBR=CLA.CLASS_NBR 
 			--AND 
 
-		)  
+		)  */
 
 
 	     AND [INS].STDNT_ENRL_STATUS='E'         

@@ -102,6 +102,7 @@ WHERE
 		)
 
 		
+		
 		AND INS.STATUS_DT = (
 			SELECT TOP 1 MAX(w.STATUS_DT)
 			FROM PS_STDNT_ENRL w
@@ -109,6 +110,7 @@ WHERE
 		)  
 		
 		--AND CLA.DT
+		/*
 		AND CLA.END_DT = (
 			SELECT MAX(x.END_DT)
 			FROM PS_CLASS_TBL x
@@ -123,11 +125,13 @@ WHERE
 			AND x.CLASS_NBR=CLA.CLASS_NBR 
 			--AND 
 
-		)  
+		)  */
 
 
 	     AND [INS].STDNT_ENRL_STATUS='E'         
-        AND [INS].STRM =@clectivo --CICLO LECTIVO QUE CURSA EL ALUMNO *
+        --AND [INS].STRM =@clectivo 
+		AND [INS].STRM in ('2014','2015','2016')
+		--CICLO LECTIVO QUE CURSA EL ALUMNO *
         AND DOC.PRIMARY_NID='Y' AND
          DIR.EFF_STATUS='A' AND ST.COUNTRY='PER'
         -- AND CLA.SESSION_CODE LIKE (@sesion+'%') --PARA MANEJAR LAS SESIONES LA LETRA RESPECTIVA A CADA MES ( L - DICIEMBRE) *
@@ -150,7 +154,7 @@ WHERE
 
 --exec sp_alumnosAleph '2015','A',null
 select *
-from dbo.sf_alumnosAleph ('2016',null,null)
+from dbo.sf_alumnosAleph ('2015',null,null)
 order by COD_BAR ASC
 
 
