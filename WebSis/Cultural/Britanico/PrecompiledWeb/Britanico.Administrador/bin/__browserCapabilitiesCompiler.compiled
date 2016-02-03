@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<preserve resultType="2" virtualPath="/Britanico.Administrador/App_Browsers/" hash="44bbc8cb" filehash="ffffd9011a1296f2" flags="110000" assembly="App_Browsers" type="ASP.ApplicationBrowserCapabilitiesFactory">
-    <filedeps>
-        <filedep name="/Britanico.Administrador/App_Browsers/BrowserFile.browser" />
-    </filedeps>
-</preserve>

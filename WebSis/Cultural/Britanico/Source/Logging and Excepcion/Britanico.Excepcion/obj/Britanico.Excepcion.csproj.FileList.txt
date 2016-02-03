@@ -1,5 +1,0 @@
-bin\Debug\Britanico.Excepcion.dll
-bin\Debug\Britanico.Excepcion.pdb
-obj\Debug\ResolveAssemblyReference.cache
-obj\Debug\Britanico.Excepcion.dll
-obj\Debug\Britanico.Excepcion.pdb

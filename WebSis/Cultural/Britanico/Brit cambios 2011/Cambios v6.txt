@@ -1,2 +1,0 @@
--foto incorrecta en galeria sin id
--descripcion y titulo en publicar incorrecta

@@ -1,1 +1,0 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="dEventoPrincipal.aspx.cs" Inherits="DataXml_dEventoPrincipal" ContentType="text/xml" EnableSessionState="False" EnableTheming="false" CodePage="1252"%>

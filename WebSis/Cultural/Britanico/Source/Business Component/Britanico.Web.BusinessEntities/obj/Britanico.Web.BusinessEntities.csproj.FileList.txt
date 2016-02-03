@@ -1,5 +1,0 @@
-bin\Debug\Britanico.Web.BusinessEntities.dll
-bin\Debug\Britanico.Web.BusinessEntities.pdb
-obj\Debug\ResolveAssemblyReference.cache
-obj\Debug\Britanico.Web.BusinessEntities.dll
-obj\Debug\Britanico.Web.BusinessEntities.pdb

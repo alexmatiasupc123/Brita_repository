@@ -1,9 +1,0 @@
-<browsers>
-  <!-- Disable the Menu Adapter for the Safari browser without changing the root browser file -->
-  <browser refID="Safari1Plus">
-    <controlAdapters>
-      <adapter controlType="System.Web.UI.WebControls.Menu"
-               adapterType="" />
-    </controlAdapters>
-  </browser>
-</browsers>

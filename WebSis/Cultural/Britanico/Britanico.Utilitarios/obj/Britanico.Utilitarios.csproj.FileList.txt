@@ -1,5 +1,0 @@
-bin\Debug\Britanico.Utilitarios.dll
-bin\Debug\Britanico.Utilitarios.pdb
-obj\Debug\ResolveAssemblyReference.cache
-obj\Debug\Britanico.Utilitarios.dll
-obj\Debug\Britanico.Utilitarios.pdb

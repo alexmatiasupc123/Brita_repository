@@ -1,1 +1,0 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="dFotoPrincipal.aspx.cs" Inherits="DataXml_dFotoPrincipal" ContentType="text/xml" EnableSessionState="False" EnableTheming="false" CodePage="1252"%>

@@ -129,8 +129,8 @@ WHERE
 
 
 	     AND [INS].STDNT_ENRL_STATUS='E'         
-        --AND [INS].STRM =@clectivo 
-		AND [INS].STRM in ('2014','2015','2016')
+        AND [INS].STRM =@clectivo 
+		--AND [INS].STRM in ('2014','2015','2016')
 		--CICLO LECTIVO QUE CURSA EL ALUMNO *
         AND DOC.PRIMARY_NID='Y' AND
          DIR.EFF_STATUS='A' AND ST.COUNTRY='PER'

@@ -1,1 +1,0 @@
--el boton publicar no funciona bien en los detalles que no tienen el parametro id en el url

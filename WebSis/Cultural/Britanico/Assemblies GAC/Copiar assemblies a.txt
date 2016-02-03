@@ -1,3 +1,0 @@
-Microsoft.SqlServer.TxScript.dll --> C:\Program Files\Microsoft SQL Server\90\SDK\Assemblies\
-
-Agregar a la cache de ensamblados

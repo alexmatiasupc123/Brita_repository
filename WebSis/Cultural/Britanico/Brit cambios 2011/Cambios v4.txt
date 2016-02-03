@@ -1,9 +1,0 @@
--agregar og:image
-
-<head>
-
-<meta property="og:image" content="http://dominio/images/thumb.jpg"/>
-
-</head>
-
--teatro detalle: subir thumb

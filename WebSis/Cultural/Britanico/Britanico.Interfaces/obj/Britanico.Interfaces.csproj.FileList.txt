@@ -1,5 +1,0 @@
-bin\Debug\Britanico.Interfaces.dll
-bin\Debug\Britanico.Interfaces.pdb
-obj\Debug\ResolveAssemblyReference.cache
-obj\Debug\Britanico.Interfaces.dll
-obj\Debug\Britanico.Interfaces.pdb

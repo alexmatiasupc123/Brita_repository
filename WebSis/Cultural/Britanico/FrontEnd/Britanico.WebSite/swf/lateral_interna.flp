@@ -1,8 +1,0 @@
-<flash_project name="lateral_interna" version="1">
-    <project_file path="./lateral_interna.fla" filetype="fla" profile="" />
-    <project_file path="./.\Preload.as" filetype="as" />
-    <project_file path="./.\mx\transitions\OnEnterFrameBeacon.as" filetype="as" />
-    <project_file path="./.\mx\transitions\BroadcasterMX.as" filetype="as" />
-    <project_file path="./.\mx\transitions\Tween.as" filetype="as" />
-    <project_file path="./.\mx\transitions\easing\Regular.as" filetype="as" />
-</flash_project>
