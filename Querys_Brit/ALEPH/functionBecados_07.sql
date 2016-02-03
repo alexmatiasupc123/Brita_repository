@@ -16,8 +16,8 @@ PH.PHONE collate Latin1_General_CI_AS AS TELEFONO,
 PH.PHONE collate Latin1_General_CI_AS AS CELULAR, --lo mismo que telefono
 MAX((DIR.ADDRESS1 + ', ' + DIST.DESCR + ', ' + PROV.DESCR + ', ' + ST.DESCR)) collate Latin1_General_CI_AS AS DIRECCION,
 EM.EMAIL_ADDR collate Latin1_General_CI_AS AS EMAIL,
-(case CLA.ACAD_CAREER
-when 'EXIN' then CONVERT(CHAR(10),DATEADD(YEAR,+1, [CLA].END_DT),112)
+(case 
+when CLA.ACAD_CAREER='EXIN' then CONVERT(CHAR(10),DATEADD(YEAR,+1, [CLA].END_DT),112)
 else CONVERT(CHAR(10),DATEADD(DAY,-2, [CLA].END_DT),112) end) collate Latin1_General_CI_AS AS F_FINAL,
 --CONVERT(CHAR(10),(CLA.END_DT),112) AS F_ULTIMO_CURSO,
 --GETDATE() AS FECHA_REGISTRO,
@@ -127,7 +127,10 @@ WHERE
 
 
 	     AND [INS].STDNT_ENRL_STATUS='E'         
-        AND [INS].STRM =@clectivo --CICLO LECTIVO QUE CURSA EL ALUMNO *
+        --AND [INS].STRM =@clectivo --CICLO LECTIVO QUE CURSA EL ALUMNO *
+		--TENIENDO EN CUENTA QUE SIEMPRE SON EXIN :D
+		AND GETDATE() <= DATEADD(YEAR,+1, [CLA].END_DT) 
+
         AND DOC.PRIMARY_NID='Y' AND
          DIR.EFF_STATUS='A' AND ST.COUNTRY='PER'
          --AND CLA.SESSION_CODE LIKE (@sesion+'%') --PARA MANEJAR LAS SESIONES LA LETRA RESPECTIVA A CADA MES ( L - DICIEMBRE) *
@@ -149,7 +152,7 @@ WHERE
 --al parecer los becados de AD6 no hay xd
 --se validará esta info de igual manera se hará por día
 
-select * from dbo.sf_becadosAleph ( '2016', null,null) ORDER BY COD_BAR ASC
-
+--select distinct NOTA_2,DESCR from dbo.sf_becadosAleph ( '2015', null,null) ORDER BY COD_BAR ASC
+select * from dbo.sf_becadosAleph ( '2016', null,null)
 
 

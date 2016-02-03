@@ -129,8 +129,11 @@ AND DIR.LASTUPDDTTM = (
 
 )
 
+AND GETDATE()<=DATEADD(YEAR,+1, B.SCC_ROW_UPD_DTTM)
+
 )
 
+--CONSUMIENDOLO
 select w.*
 from sf_usuariosRestantesAleph('2016','L',null) w
 where w.F_FINAL =
