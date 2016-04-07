@@ -74,3 +74,6 @@ INSERT #BR_ALEPH_TST ([ID], [COD_BAR], [NOMBRE], [GENERO], [FNAC], [LUGAR], [TEL
 
 --drop table #BR_ALEPH_H
 --drop table #BR_ALEPH_TST
+
+select *
+from #BR_ALEPH_TST

@@ -1,0 +1,29 @@
+SELECT REPLACE(NOMBRE,'''',' '),REPLACE(DIRECCION,'''',' ')
+FROM BR_USUARIOS_ALEPH_RSET
+where NOMBRE like '%['''']%' OR DIRECCION like '%['''']%'
+go
+SELECT REPLACE(NOMBRE,'·','U'),DIRECCION
+FROM BR_USUARIOS_ALEPH
+where COD_BAR='38713'
+
+SELECT NOMBRE,DIRECCION
+FROM BR_USUARIOS_ALEPH_RSET
+where COD_BAR='38713'
+
+SELECT NOMBRE,DIRECCION
+FROM BR_USUARIOS_ALEPH_RSET
+where NOMBRE like '%['''']%' OR DIRECCION like '%['''']%'
+
+---------------//UPDATES
+update BR_USUARIOS_ALEPH
+set NOMBRE=REPLACE(NOMBRE,'''',' ') , DIRECCION=REPLACE(DIRECCION,'''',' ')
+where NOMBRE like '%['''']%' OR DIRECCION like '%['''']%'
+--------
+update BR_USUARIOS_ALEPH
+set NOMBRE=REPLACE(NOMBRE,'·','U')
+where COD_BAR='38713'
+
+
+---
+
+SELECT name, collation_name FROM sys.databases;

@@ -1,9 +1,8 @@
-alter procedure [dbo].[BRIT_PROC_CARGA_USUARIOS_ALEPH] @clectivo varchar(4), @sesion varchar(1),@clase varchar(6)
+alter procedure sp_jobAleph @clectivo varchar(4), @sesion varchar(1),@clase varchar(6)
 as
 begin
 
-	
-	--UTILIZANDO UNA TABLA TEMPORAL
+	--//CREANDO UNA TABLA TEMPORAL PARA RECIBIR LOS UNIONS
 	create table #temporalAlephProc(ID varchar(12),	COD_BAR varchar(200),NOMBRE varchar(200),GENERO varchar(2),FNAC varchar(8),
 	LUGAR varchar(200),TELEFONO varchar(30),CELULAR varchar(30),DIRECCION varchar(400),EMAIL varchar(80),F_FINAL varchar(8),
 	ESTATUS varchar(2),TIPO varchar(2),SUB_BIB varchar(200),NOTA_1 varchar(200),NOTA_2 varchar(200),NOTA_3 varchar(200),
@@ -29,35 +28,16 @@ begin
 	from dbo.sf_usuariosRestantesAleph(@clectivo,@sesion,@clase) d
 	--order by COD_BAR  
 	
-	 PRINT N'SE REALIZO LOS UNION ALL'    
 	
-	
-	create table #BR_ALEPH_QUITANDO_FFINAL(ID varchar(12),	COD_BAR varchar(200),NOMBRE varchar(200),GENERO varchar(2),FNAC varchar(8),
-	LUGAR varchar(200),TELEFONO varchar(30),CELULAR varchar(30),DIRECCION varchar(400),EMAIL varchar(80),F_FINAL varchar(8),
-	ESTATUS varchar(2),TIPO varchar(2),SUB_BIB varchar(200),NOTA_1 varchar(200),NOTA_2 varchar(200),NOTA_3 varchar(200),
-	LOCAL_LIB varchar(20),PIP_LIB varchar(20),PIB_TOTAL varchar(4),PIB_ACTIVA varchar(4),TIT_LIMITE varchar(4))
-	
-	create table #BR_ALEPH_QUITANDO_NOTA2(ID varchar(12),	COD_BAR varchar(200),NOMBRE varchar(200),GENERO varchar(2),FNAC varchar(8),
-	LUGAR varchar(200),TELEFONO varchar(30),CELULAR varchar(30),DIRECCION varchar(400),EMAIL varchar(80),F_FINAL varchar(8),
-	ESTATUS varchar(2),TIPO varchar(2),SUB_BIB varchar(200),NOTA_1 varchar(200),NOTA_2 varchar(200),NOTA_3 varchar(200),
-	LOCAL_LIB varchar(20),PIP_LIB varchar(20),PIB_TOTAL varchar(4),PIB_ACTIVA varchar(4),TIT_LIMITE varchar(4))
-		
+	--//CREANDO OTRA TABLA TEMPORAL PARA QUITAR DUPLICADOS Y VALIDAR CARACTERES ESPECIALES
 	create table #BR_ALEPH(ID varchar(12),	COD_BAR varchar(200),NOMBRE varchar(200),GENERO varchar(2),FNAC varchar(8),
 	LUGAR varchar(200),TELEFONO varchar(30),CELULAR varchar(30),DIRECCION varchar(400),EMAIL varchar(80),F_FINAL varchar(8),
 	ESTATUS varchar(2),TIPO varchar(2),SUB_BIB varchar(200),NOTA_1 varchar(200),NOTA_2 varchar(200),NOTA_3 varchar(200),
 	LOCAL_LIB varchar(20),PIP_LIB varchar(20),PIB_TOTAL varchar(4),PIB_ACTIVA varchar(4),TIT_LIMITE varchar(4))
 		
-
-		---QUITANDO LOS DUPLICADOS POR F_FINAL
-		insert into #BR_ALEPH_QUITANDO_FFINAL
+		insert into #BR_ALEPH
 		select 
-		w.ID,w.COD_BAR, 
-		REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(w.NOMBRE,'''',' '), 'á', 'a'), 
-		'é','e'), 'í', 'i'), 'ó', 'o'), 'ú','u'), 'É','E'), 'Í', 'I'), 'Ó', 'O'), 'Ú','U'),'Ý','Y'),'ý','y'),'’',' ')
-		,w.GENERO,w.FNAC,w.LUGAR,w.TELEFONO,w.CELULAR,
-		REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(w.DIRECCION,'''',' '), 'á', 'a'), 
-	'é','e'), 'í', 'i'), 'ó', 'o'), 'ú','u'), 'É','E'), 'Í', 'I'), 'Ó', 'O'), 'Ú','U'),'Ý','Y'),'ý','y'),'’',' ')
-		,w.EMAIL,w.F_FINAL,w.ESTATUS,w.TIPO,w.SUB_BIB,w.NOTA_1,w.NOTA_2,w.NOTA_3,w.LOCAL_LIB,w.PIP_LIB,w.PIB_TOTAL,w.PIB_ACTIVA,w.TIT_LIMITE
+		w.ID,w.COD_BAR,REPLACE(w.NOMBRE,'''',' '),w.GENERO,w.FNAC,w.LUGAR,w.TELEFONO,w.CELULAR,REPLACE(w.DIRECCION,'''',' '),w.EMAIL,w.F_FINAL,w.ESTATUS,w.TIPO,w.SUB_BIB,w.NOTA_1,w.NOTA_2,w.NOTA_3,w.LOCAL_LIB,w.PIP_LIB,w.PIB_TOTAL,w.PIB_ACTIVA,w.TIT_LIMITE
 		from #temporalAlephProc w		
 		where				
 		 w.F_FINAL = 
@@ -65,76 +45,30 @@ begin
 			select MAX(x.F_FINAL) 
 			from #temporalAlephProc x
 			where x.COD_BAR=w.COD_BAR
-		) 
-		/*
+		) 	
+		AND
+		w.CRSE_ID = (
+			SELECT MIN(y.CRSE_ID)
+			FROM #temporalAlephProc y
+			where y.COD_BAR=w.COD_BAR
+		)
 		AND
 		w.COD_BAR = (
-			 SELECT MAX(y.COD_BAR)
+			 SELECT MAX(COD_BAR)
 			FROM #temporalAlephProc y
 			WHERE w.ID=y.ID
-		)*/
+		)
 		AND
-		w.ID <> ''
+		w.ID <> ''		
 		order by w.COD_BAR
 		
-		 PRINT N'SE QUITARON LOS DUPLICADOS POR F_FINAL'    
-		
-		---------------------ESCOGIENDO EL MAX PARA LA NOTA2
-		
-		insert into #BR_ALEPH
-		SELECT *
-		FROM #BR_ALEPH_QUITANDO_FFINAL x
-		WHERE x.NOTA_2 = (
-			SELECT MAX(w.NOTA_2)
-			FROM #BR_ALEPH_QUITANDO_FFINAL w
-			where w.COD_BAR=x.COD_BAR			
-		)
 
-		 PRINT N'SE PREPARO LA DATA LISTA PARA COMENZAR'    
-
-		--------- QUITANDO LOS DUPLICADOS DE DNI CON CODBAR
-		/*
-		insert into #BR_ALEPH
-		SELECT x.*
-		FROM #BR_ALEPH_QUITANDO_NOTA2 x inner join 
-		(
-			select ID,MAX(F_FINAL)F_FINAL
-			from #BR_ALEPH_QUITANDO_NOTA2
-			GROUP BY ID
-		) w on x.ID=w.ID and x.F_FINAL=w.F_FINAL
-		
-			*/
-
-
-		
-				/*	
-		select ID,COUNT(COD_BAR)
-		from #BR_ALEPH
-		GROUP BY ID
-		HAVING COUNT(COD_BAR)>1	
-		*/
-
-		/*
-		--MOSTRANDO LOS QUE SE REPITEN
-		SELECT *
-		FROM #BR_ALEPH 
-		WHERE ID IN (SELECT ID
-					 FROM #BR_ALEPH
-					 GROUP BY ID
-					 HAVING COUNT(COD_BAR)>1)
-		ORDER BY ID ASC
-
-		*/
-		
-		
 		--//---------------------------------------------------
+
 		
+		--REGISTRANDO LA INFO PASADA EN EL HISTORICO		
 		
-		--SIMULANDO QUE LA DATA FUERA #BR_ALEPH_TST
-		--REGISTRANDO LA INFO PASADA EN EL HISTORICO
-		
-		
-		INSERT INTO ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH_HIS] (ID,COD_BAR,NOMBRE,GENERO,FNAC,LUGAR,TELEFONO,CELULAR,DIRECCION,EMAIL,F_FINAL,ESTATUS,TIPO,SUB_BIB,NOTA_1,NOTA_2,NOTA_3,LOCAL_LIB,PIP_LIB,PIB_TOTAL,PIB_ACTIVA,TIT_LIMITE,DESCRIPCION_UP,DT_EFF)--x
+		INSERT INTO ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH_HIS] (ID,COD_BAR,NOMBRE,GENERO,FNAC,LUGAR,TELEFONO,CELULAR,DIRECCION,EMAIL,F_FINAL,ESTATUS,TIPO,SUB_BIB,NOTA_1,NOTA_2,NOTA_3,LOCAL_LIB,PIP_LIB,PIB_TOTAL,PIB_ACTIVA,TIT_LIMITE,DESCRIPCION_UP)--x
 		SELECT A.ID collate Modern_Spanish_CI_AS as ID,A.COD_BAR collate Modern_Spanish_CI_AS as COD_BAR,A.NOMBRE collate Modern_Spanish_CI_AS as NOMBRE,
 		A.GENERO collate Modern_Spanish_CI_AS as GENERO,A.FNAC collate Modern_Spanish_CI_AS as FNAC,A.LUGAR collate Modern_Spanish_CI_AS as LUGAR,
 		A.TELEFONO collate Modern_Spanish_CI_AS as TELEFONO,A.CELULAR collate Modern_Spanish_CI_AS as CELULAR,
@@ -159,31 +93,27 @@ begin
 			when (A.NOTA_3 collate Modern_Spanish_CI_AS )<>B.NOTA_3 then 'NOTA_3'
 			else 'NO PRECISADO'
 			end
-		) collate Modern_Spanish_CI_AS as DESCRIPCION_UP,GETDATE()
-		FROM ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH] A --x
+		) collate Modern_Spanish_CI_AS as DESCRIPCION_UP
+		FROM ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH_TST_TST] A --(X)
 		INNER JOIN #BR_ALEPH B ON (A.COD_BAR collate Modern_Spanish_CI_AS)=B.COD_BAR AND
 		(  (A.ID collate Modern_Spanish_CI_AS )<>B.ID OR (A.NOMBRE collate Modern_Spanish_CI_AS)<>B.NOMBRE OR (A.FNAC collate Modern_Spanish_CI_AS)<>B.FNAC
 		OR (A.TELEFONO collate Modern_Spanish_CI_AS)<>B.TELEFONO OR (A.DIRECCION collate Modern_Spanish_CI_AS)<>B.DIRECCION OR (A.EMAIL collate Modern_Spanish_CI_AS)<>B.EMAIL OR (A.F_FINAL collate Modern_Spanish_CI_AS )<>B.F_FINAL
 		OR (A.ESTATUS collate Modern_Spanish_CI_AS)<>B.ESTATUS OR (A.NOTA_1 collate Modern_Spanish_CI_AS)<>B.NOTA_1 OR (A.NOTA_2 collate Modern_Spanish_CI_AS)<>B.NOTA_2 OR (A.NOTA_3 collate Modern_Spanish_CI_AS)<>B.NOTA_3 )
 		
-		 PRINT N'SE INSERTO EN EL HISTORICO DE ALEPH'    
 		
-		--ELIMINANDO LO QUE SE ACTUALIZÓ
 		
-		DELETE A FROM ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH] A INNER JOIN #BR_ALEPH B ON (A.COD_BAR collate Modern_Spanish_CI_AS)=B.COD_BAR
+		--ELIMINANDO LO QUE SE ACTUALIZÓ (X)
+		
+		DELETE A FROM ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH_TST_TST] A INNER JOIN #BR_ALEPH B ON (A.COD_BAR collate Modern_Spanish_CI_AS)=B.COD_BAR
 
-		 PRINT N'SE ELIMINARON LOS QUE CRUZARON'    
 
-		--ACTUALIZANDO LO QUE YA PASÓ
-		UPDATE ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH]
+		--ACTUALIZANDO LO QUE YA PASÓ (SI NO CRUZA AL ELIMINAR LO QUE QUEDA LO ACTUALIZA COMO YA PASO, ASI YA SOLUCIONAMOS EL CASO DE STAFF INACTIVO Y ALUMNOS DE BAJA)
+		UPDATE ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH_TST_TST] --(X)
 		SET F_FINAL='19900101'
 		
-		 PRINT N'SE ACTUALIZARON LOS QUE YA NO APARECIERON'    
-		
-		--CREAR UNA TABLA ADICIONAL
-		
+						
 		--INSERCIÓN DE LA DATA ACTUALIZADA
-		INSERT INTO ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH]
+		INSERT INTO ALEPH.BR_USUARIOS.[dbo].[BR_USUARIOS_ALEPH_TST_TST] --(X)
 		SELECT A.ID collate Modern_Spanish_CI_AS as ID,A.COD_BAR collate Modern_Spanish_CI_AS as COD_BAR,A.NOMBRE collate Modern_Spanish_CI_AS as NOMBRE,
 		A.GENERO collate Modern_Spanish_CI_AS as GENERO,A.FNAC collate Modern_Spanish_CI_AS as FNAC,A.LUGAR collate Modern_Spanish_CI_AS as LUGAR,
 		A.TELEFONO collate Modern_Spanish_CI_AS as TELEFONO,A.CELULAR collate Modern_Spanish_CI_AS as CELULAR,
@@ -195,15 +125,8 @@ begin
 		A.PIB_ACTIVA collate Modern_Spanish_CI_AS as PIB_ACTIVA,A.TIT_LIMITE collate Modern_Spanish_CI_AS as TIT_LIMITE
 		 FROM #BR_ALEPH A
 		
-		 PRINT N'SE INSERTO LA DATA ACTUALIZADA EN LA TABLA INTERMEDIA DE ALEPH'    
 		
 		--//------------------------------------------------------
-			
-		PRINT 'SE REALIZO CORRECTAMENTE LA CARGA :) - COMMIT'
-			
+				
 
 end
-
-
---exec dbo.[BRIT_PROC_CARGA_USUARIOS_ALEPH] null,null,null
-
